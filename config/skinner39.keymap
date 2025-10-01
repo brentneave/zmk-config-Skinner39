@@ -38,7 +38,7 @@
             bindings = <
 &trans          &kp CAPSLOCK        &kp LS(LG(N4))  &kp LS(LC(LG(N4)))  &trans              &trans  &kp HOME        &kp PG_UP     &kp PG_DN     &kp END
 &mt LSHIFT ESC  &mt LCTRL TAB       &mt LALT BSPC   &mt LGUI DEL        &trans              &trans  &mt RGUI LEFT   &mt RALT UP   &mt RCTRL DOWN &mt RSHIFT RIGHT
-&trans          &kp K_PREV          &kp K_PP        &kp K_NEXT          &trans              &trans  &kp RG(LEFT)    &kp RA(LEFT)  &kp RA(RIGHT) &kp RG(RIGHT)
+&trans          &kp C_PREV          &kp C_PP        &kp C_NEXT          &trans              &trans  &kp RG(LEFT)    &kp RA(LEFT)  &kp RA(RIGHT) &kp RG(RIGHT)
 &trans          &trans              &trans          &trans              &trans      &trans  &trans  &trans                                      &trans
             >;
         };

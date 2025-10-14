@@ -29,17 +29,17 @@
 &kp Q           &kp W         &kp F         &kp P         &kp G                                    &kp J    &kp L       &kp U           &kp Y       &kp SINGLE_QUOTE
 &mt LSHIFT A    &mt LCTRL R   &mt LALT S    &mt LGUI T    &kp D                                    &kp H    &mt RGUI N  &mt RALT E      &mt RCTRL I &mt RSHIFT O
 &kp Z           &kp X         &kp C         &kp V         &kp B                                    &kp K    &kp M       &kp COMMA       &kp DOT     &kp SLASH
-&trans          &trans        &mo 4         &mkp MB2      &mkp MB1   &mo 3            &lt 2 ENTER  &lt 1 SPACE                                      &trans
+&trans          &trans        &mo 4         &lt 1 ESC     &lt 2 TAB   &lt 3 ENTER    &lt 2 BSPC    &lt 1 SPACE                                      &trans
             >;
         };
 
         nav_layer {
             label = "NAV";
             bindings = <
-&trans          &kp CAPSLOCK        &kp LS(LG(N4))  &kp LS(LC(LG(N4)))  &trans              &trans  &kp HOME        &kp PG_UP     &kp PG_DN     &kp END
-&mt LSHIFT ESC  &mt LCTRL TAB       &mt LALT BSPC   &mt LGUI DEL        &trans              &trans  &mt RGUI LEFT   &mt RALT UP   &mt RCTRL DOWN &mt RSHIFT RIGHT
-&trans          &kp C_PREV          &kp C_PP        &kp C_NEXT          &trans              &trans  &kp RG(LEFT)    &kp RA(LEFT)  &kp RA(RIGHT) &kp RG(RIGHT)
-&trans          &trans              &trans          &trans              &trans      &trans  &trans  &trans                                      &trans
+&trans          &kp CAPSLOCK        &kp LS(LG(N4))  &kp LS(LC(LG(N4)))  &trans                      &trans  &kp HOME        &kp PG_UP     &kp PG_DN         &kp END
+&mt LSHIFT ESC  &mt LCTRL TAB       &mt LALT BSPC   &mt LGUI DEL        &trans                      &trans  &mt RGUI LEFT   &mt RALT UP   &mt RCTRL DOWN    &mt RSHIFT RIGHT
+&trans          &kp C_PREV          &kp C_PP        &kp C_NEXT          &trans                      &trans  &kp RG(LEFT)    &kp RA(LEFT)  &kp RA(RIGHT)     &kp RG(RIGHT)
+&trans          &trans              &trans          &mkp MB2            &mkp MB1    &trans  &trans  &trans                                                  &trans
             >;
         };
 

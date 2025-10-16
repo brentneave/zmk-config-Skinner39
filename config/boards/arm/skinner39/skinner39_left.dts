@@ -74,8 +74,8 @@ nice_view_spi: &spi2 {
 	status = "okay";
 
 	// Default behavior: auto-activate mouse layer when trackball moves
-	// Layer 5 is activated for 2000ms (2 seconds) when trackball movement is detected
-	input-processors = <&zip_temp_layer 5 2000>;
+	// Layer 5 is activated for 1000ms (1 second) when trackball movement is detected
+	input-processors = <&zip_temp_layer 5 1000>;
 
 	// when layer 3 is active, the trackball will act as a mouse wheel
 	scroller {

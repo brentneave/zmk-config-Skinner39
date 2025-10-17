@@ -20,6 +20,14 @@
 };
 
 / {
+    macros {
+        exit_mouse: exit_mouse {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -79,7 +87,7 @@
 &trans        &trans        &trans        &trans        &trans                              &trans  &trans   &trans &trans  &trans
 &trans        &trans        &trans        &trans        &trans                              &trans  &trans   &trans &trans  &trans
 &trans        &trans        &trans        &trans        &trans                              &trans  &trans   &trans &trans  &trans      
-&to 0         &trans        &mo 4         &mkp MB2      &mkp MB1  &lt 3 ENTER   &lt 5 BSPC  &lt 2 SPACE                          &trans
+&trans        &trans        &trans        &mkp MB2      &mkp MB1  &trans        &trans      &trans                          &trans
             >;
         };
     };

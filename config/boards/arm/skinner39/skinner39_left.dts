@@ -71,31 +71,16 @@ nice_view_spi: &spi2 {
     };
 };
 
-/ {
-	auto_mouse_layer: auto_mouse_layer {
-		compatible = "zmk,input-processor-temp-layer";
-		#input-processor-cells = <2>;
-		require-prior-idle-ms = <150>;
-		excluded-positions = <33 34>;  // Mouse button positions - clicking them keeps layer active and resets timeout
-	};
-};
-
 &pmw_listener {
 	status = "okay";
-
-	// Default behavior: auto-activate mouse layer when trackball moves
-	// Layer 5 is activated for 1500ms and exits on any non-mouse keypress
-	// Mouse button clicks (positions 33, 34) reset the timeout to keep layer active
-	input-processors = <&auto_mouse_layer 5 1500>;
-
-	// when layer 3 is active, the trackball will act as a mouse wheel
+	// when layer 4 is active, the trackball will act as a mouse wheel
 	scroller {
-		layers = <3>;
+		layers = <4>;
 		input-processors = <&zip_xy_scaler 1 32>, <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>;
 	};
-	// default when layer 4 is active, the trackball will move more slowly
+	// default when layer 3 is active, the trackball will move more slowly	
 		snipe {
-		layers = <4>;
+		layers = <3>;
 		input-processors = <&zip_xy_scaler 1 3>;
 	};
 };

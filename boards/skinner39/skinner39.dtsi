@@ -8,6 +8,7 @@
 #include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
+#include <zephyr/dt-bindings/regulator/nrf5x.h>
 
 / {
     model = "skinner39";
@@ -163,4 +164,9 @@ zephyr_udc0:&usbd {
         status = "disabled";
         device = <&pmw_split>;
     };
+};
+
+/* Enable DC/DC converter for power efficiency */
+&reg1 {
+    regulator-initial-mode = <NRF5X_REG_MODE_DCDC>;
 };

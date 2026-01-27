@@ -1,0 +1,12 @@
+file_format: "1"
+id: skinner39
+name: Skinner39
+type: board
+url: https://github.com/yangxing844/zmk-config-Skinner39
+features:
+  - keys
+  - display
+  - pointing
+siblings:
+  - skinner39_left
+  - skinner39_right

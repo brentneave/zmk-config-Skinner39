@@ -1,0 +1,30 @@
+# Build output
+build/
+
+# West workspace
+/.west/
+zephyr/
+zmk/
+modules/
+
+# External ZMK modules (from west.yml)
+zmk-pmw3610-driver/
+zmk-split-peripheral-input-relay/
+zmk-input-behavior-listener/
+zmk-lpm009m360a-driver/
+
+# Zephyr SDK toolchain
+zephyr-sdk-*/
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Editor/IDE
+.cache/
+*.swp
+*~

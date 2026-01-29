@@ -4,6 +4,7 @@ build/
 # West workspace
 /.west/
 zephyr/
+!zephyr/module.yml
 zmk/
 modules/
 

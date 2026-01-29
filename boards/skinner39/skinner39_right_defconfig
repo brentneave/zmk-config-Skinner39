@@ -22,5 +22,5 @@ CONFIG_FLASH=y
 CONFIG_FLASH_PAGE_LAYOUT=y
 CONFIG_FLASH_MAP=y
 
-CONFIG_ZMK_USB=y
+# Peripheral doesn't use USB, only central
 CONFIG_ZMK_BLE=y

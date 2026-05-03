@@ -9,19 +9,19 @@ manifest:
   projects:
     - name: zmk
       remote: zmk
-      revision: main
+      revision: abb64ba316c29caddc49727ca2cac2f0ed5970c7
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
-      revision: main
+      revision: 77635bad95097e2ed6fc16624622cff025a0e33b
     - name: zmk-split-peripheral-input-relay
       remote: badjeff
-      revision: main
+      revision: f49a5ca22a7b5626e37cffc73e97e64945bf9eb0
     - name: zmk-input-behavior-listener
       remote: badjeff
-      revision: main
+      revision: 80fc27026a28b99b6d3301898bcd894675e4e8a3
     - name: zmk-lpm009m360a-driver
       remote: yangxing
-      revision: master
+      revision: 06cbdb6e8ef691d6de9045645b6182d906f44b06
   self:
     path: config
